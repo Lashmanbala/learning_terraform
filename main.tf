@@ -1,4 +1,4 @@
+provider "aws" {region = var.aws_region}
 
-provider "aws" {region = "us-east-1"}
+resource "aws_s3_bucket" "test_bkt" {bucket = var.s3_bkt_name}
 
-resource "aws_s3_bucket" "test_bkt" {bucket = "tf-test-bkt-1"}
